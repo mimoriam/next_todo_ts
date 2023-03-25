@@ -1,4 +1,5 @@
 import TodosList from "@/app/todos/TodosList";
+import CreateTodo from "@/app/todos/CreateTodo";
 
 export default function RootLayout({
   children,
@@ -8,6 +9,7 @@ export default function RootLayout({
   return (
     <main className="flex">
       <div>
+        <CreateTodo />
         {/* @ts-ignore */}
         <TodosList />
       </div>
